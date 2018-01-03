@@ -32,7 +32,7 @@ Latitude	Longitude
 34.08537607	-118.3438039
  */
 
-public class ProximityTests {
+public class TestProximity {
 
     private static double[][] points = {
             {34.134782, 34.13307, 33.995244, 34.093942, 34.0482681, 34.04852367, 34.02929123, 34.08537607}, // lat
@@ -120,7 +120,7 @@ public class ProximityTests {
 
             NumberFormat p = new DecimalFormat("#0.0");
             NumberFormat k = new DecimalFormat("#0.0000");
-            System.out.println("lat1: " + points[0][0] + "\tlon1: " + points[1][0] + "\t\tlat2: " + x + "\tlon2: " + y);
+            System.out.println(points[0][0] + "," + points[1][0] + "  ->  " + x + "," + y);
             // System.out.println("Distance - " + points[0][0] + "," + points[1][0] + ", " + points[0][i] + "," + points[1][i] + " :: " +
             System.out.println(
                     "haversine:  " + k.format(distanceH) + "\t" +
